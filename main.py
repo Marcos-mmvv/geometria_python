@@ -6,10 +6,13 @@
 
 #Funções
 import os
+# Usando o Lambda
+calcular_circulo = lambda raio, pi: raio * pi
 
-def calcular_circulo(raio, pi):
-    area = raio * pi
-    return area
+# usando função normal
+#def calcular_circulo(raio, pi):
+#    area = raio * pi
+#    return area
 
 print(f'{'-'*30} CALCULAR A ÁREA DO CIRCULO {'-'*30}')
 raio = int(input('Informe o valor do raio: '))
@@ -21,9 +24,10 @@ pi = float(pi)
 print(f'A área do circulo é: {calcular_circulo(raio, pi)}')
 print()
 
-def calcular_triangulo(base, altura):
-    area = base * altura / 2
-    return area
+calcular_triangulo = lambda base, altura: base * altura /2
+#def calcular_triangulo(base, altura):
+#    area = base * altura / 2
+#    return area
 
 print(f'{'-'*30} CALCULAR A ÁREA DO TRIÂNGULO {'-'*30}')
 base = int(input('Informe o valor da base: '))
@@ -35,9 +39,10 @@ altura = float(altura)
 print(f'A área do triângulo é: {calcular_triangulo(base, altura)}')
 print()
 
-def calcular_trapezio(base1, base2, altura):
-    area = base1 + base2 * altura / 2
-    return area
+calcular_trapezio = lambda base1, base2, altura: base1 + base2 * altura /2
+#def calcular_trapezio(base1, base2, altura):
+#    area = base1 + base2 * altura / 2
+#    return area
 
 print(f'{'-'*30} CALCULAR A ÁREA DO TRAPÉZIO {'-'*30}')
 base1 = int(input('Informe o valor da 1º base: '))
